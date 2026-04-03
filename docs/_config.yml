@@ -1,2 +1,14 @@
 title: Twenty³
-description: Documentation site for Twenty³
+description: A privacy-first score tracking app.
+url: https://likashefqet.github.io
+baseurl: /twenty3
+permalink: pretty
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+sass:
+  style: compressed

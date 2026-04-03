@@ -1,5 +1,6 @@
 ---
 title: Privacy Policy
+permalink: /privacy-policy/
 ---
 
 # Privacy Policy for Twenty³
