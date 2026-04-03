@@ -1,8 +1,12 @@
+---
+title: Privacy Policy
+---
+
 # Privacy Policy for Twenty³
 
 **Effective Date:** April 1st, 2026
 
-Twenty³ (“we”, “our”, or “us”) is designed to work entirely on your device. We do not collect, store, or transmit your data to external servers.
+Twenty³ ("we", "our", or "us") is designed to work entirely on your device. We do not collect, store, or transmit your data to external servers.
 
 ---
 
@@ -14,7 +18,7 @@ All data used in Twenty³ is stored locally on your device. We do not have acces
 
 ## 2. Camera Permission
 
-The app may request access to your device’s camera to allow you to capture images within the app.
+The app may request access to your device's camera to allow you to capture images within the app.
 
 Camera usage is:
 
@@ -50,11 +54,11 @@ Any exported data is handled entirely by you and is not accessed by us.
 
 ## 6. Data Security
 
-Your data is protected by your device’s operating system and security settings. We do not have access to your data.
+Your data is protected by your device's operating system and security settings. We do not have access to your data.
 
 ---
 
-## 7. Children’s Privacy
+## 7. Children's Privacy
 
 Twenty³ does not knowingly collect any data from users, including children under 13.
 
@@ -62,7 +66,7 @@ Twenty³ does not knowingly collect any data from users, including children unde
 
 ## 8. Changes to This Policy
 
-If the app’s functionality changes, this policy may be updated. Changes will be reflected by updating the effective date.
+If the app's functionality changes, this policy may be updated. Changes will be reflected by updating the effective date.
 
 ---
 
