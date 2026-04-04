@@ -2,16 +2,47 @@
 ---
 
 :root {
-  --bg: #f4efe4;
-  --bg-accent: #e8dcc3;
-  --surface: rgba(255, 252, 245, 0.9);
-  --surface-strong: #fffaf0;
-  --text: #1f1a14;
-  --muted: #6e6254;
-  --line: rgba(53, 39, 22, 0.12);
-  --brand: #af3b2a;
-  --brand-strong: #7f2418;
-  --shadow: 0 24px 60px rgba(43, 24, 8, 0.12);
+  color-scheme: light;
+  --bg: #fcf7f1;
+  --bg-end: #f3f5f7;
+  --glow-primary: rgba(10, 110, 150, 0.16);
+  --glow-accent: rgba(168, 115, 70, 0.18);
+  --surface: rgba(255, 255, 255, 0.9);
+  --surface-strong: #ffffff;
+  --text: #11181c;
+  --muted: #687076;
+  --line: rgba(230, 233, 238, 0.96);
+  --brand: #005682;
+  --brand-strong: #0a6e96;
+  --brand-soft: #d9eaf2;
+  --accent: #a87346;
+  --accent-soft: #eedbcb;
+  --button-text: #fcf7f1;
+  --button-shadow: 0 12px 24px rgba(11, 42, 56, 0.22);
+  --shadow: 0 24px 60px rgba(11, 42, 56, 0.14);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #151718;
+    --bg-end: #1a1d20;
+    --glow-primary: rgba(75, 163, 199, 0.22);
+    --glow-accent: rgba(180, 128, 82, 0.18);
+    --surface: rgba(28, 31, 34, 0.9);
+    --surface-strong: #1c1f22;
+    --text: #ecedee;
+    --muted: #9ba1a6;
+    --line: rgba(42, 46, 51, 0.96);
+    --brand: #4ba3c7;
+    --brand-strong: #ffffff;
+    --brand-soft: #23303a;
+    --accent: #b48052;
+    --accent-soft: #3a2b21;
+    --button-text: #151718;
+    --button-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    --shadow: 0 24px 60px rgba(0, 0, 0, 0.34);
+  }
 }
 
 * {
@@ -28,8 +59,9 @@ body {
   font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top, rgba(175, 59, 42, 0.1), transparent 32rem),
-    linear-gradient(180deg, var(--bg) 0%, #f8f4ec 50%, #efe5d5 100%);
+    radial-gradient(circle at top left, var(--glow-primary), transparent 28rem),
+    radial-gradient(circle at top right, var(--glow-accent), transparent 24rem),
+    linear-gradient(180deg, var(--bg) 0%, var(--surface-strong) 48%, var(--bg-end) 100%);
 }
 
 a {
@@ -53,6 +85,7 @@ a {
 .brand {
   font-size: clamp(1.4rem, 2vw, 1.9rem);
   font-weight: 700;
+  color: var(--brand);
   text-decoration: none;
   letter-spacing: 0.03em;
 }
@@ -70,7 +103,7 @@ a {
 
 .site-nav a:hover,
 .site-nav a:focus-visible {
-  color: var(--brand-strong);
+  color: var(--brand);
 }
 
 .page-content {
@@ -97,11 +130,13 @@ h1 {
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: clamp(2.4rem, 7vw, 5rem);
+  color: var(--brand);
 }
 
 h2 {
   margin-top: 2rem;
   font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--accent);
 }
 
 p,
@@ -128,11 +163,11 @@ hr {
   display: inline-block;
   padding: 0.9rem 1.25rem;
   border-radius: 999px;
-  background: linear-gradient(135deg, var(--brand) 0%, var(--brand-strong) 100%);
-  color: #fff8f1;
+  background: linear-gradient(135deg, var(--brand) 0%, var(--accent) 100%);
+  color: var(--button-text);
   text-decoration: none;
   font-weight: 700;
-  box-shadow: 0 12px 24px rgba(127, 36, 24, 0.22);
+  box-shadow: var(--button-shadow);
 }
 
 .button:hover,
